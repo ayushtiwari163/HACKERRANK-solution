@@ -1,0 +1,36 @@
+# HACKERRANK-solution-in-c
+problem solvung
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+  
+int main()
+{
+  long int k1,v1,k2,v2;
+ long long int i;
+  int s1,s2;
+  
+  scanf("%ld %ld %ld %ld" ,&k1,&v1,&k2,&v2);
+  s1=k1;
+  s2=k2;
+  for(i=0;i<10000;i++)
+  {
+    s1=s1+v1;
+    s2=s2+v2;
+    if(s1==s2)
+    {
+      printf("YES");
+      break;
+    }
+  }
+  if(s1!=s2)
+  printf("NO");  
+  }
+    
+  
