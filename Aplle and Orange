@@ -1,0 +1,36 @@
+# HACKERRANK-solution
+problem solvung
+#include <assert.h>
+#include <limits.h>
+#include <math.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()
+{
+ long long int s,t,a,b,c=0,d,e=0,p[100000],o[100000],i,j,m,n;
+  scanf("%lld %lld" ,&s,&t);
+  scanf("%lld %lld" ,&a,&b);
+  scanf("%lld %lld" ,&m,&n);
+  for(i=0;i<m;i++)
+ { scanf("%lld " ,&p[i]);
+ if(a+p[i]>=s&&a+p[i]<=t)
+ {
+   e++;
+ }
+}
+for(j=0;j<n;j++)
+{
+scanf("%lld " ,&o[j]);
+if(b+o[j]>=s&&b+o[j]<=t)
+{
+c++;
+}
+}
+
+printf("%lld\n%lld" ,e,c);
+
+}
